@@ -1,7 +1,11 @@
+//
+// Copyright © 2021 An Tran. All rights reserved.
+//
+
 import Foundation
-import TweakPane
-import SwiftUI
 import SwiftPublicIP
+import SwiftUI
+import TweakPane
 
 public struct SwiftPublicIPBlade: Blade {
     public var name: String = "Public IP"
@@ -18,7 +22,6 @@ private struct ContentView: View {
 
     @StateObject private var viewModel = ViewModel()
     
-
     var body: some View {
         VStack(alignment: .leading) {
             if let ip = viewModel.ip {
@@ -34,7 +37,7 @@ extension ContentView {
         @Published var ip: String?
         
         func fetchIP() {
-            SwiftPublicIP.getPublicIP(url: PublicIPAPIURLs.IPv4.icanhazip.rawValue) { [weak self] (string, error) in
+            SwiftPublicIP.getPublicIP(url: PublicIPAPIURLs.IPv4.icanhazip.rawValue) { [weak self] string, error in
                 if let error = error {
                     self?.ip = error.localizedDescription
                 } else if let string = string {
