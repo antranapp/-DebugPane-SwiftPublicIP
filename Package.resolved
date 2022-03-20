@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DebugPane",
+        "repositoryURL": "https://github.com/antranapp/DebugPane",
+        "state": {
+          "branch": "master",
+          "revision": "6fb746b07c0af46f2b693a582e0425682ea88cfb",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftPublicIP",
+        "repositoryURL": "https://github.com/HackingGate/Swift-Public-IP",
+        "state": {
+          "branch": "master",
+          "revision": "046079f891de67de00a4bba2e636d0a74a0c074f",
+          "version": null
+        }
+      },
+      {
+        "package": "TweakPane",
+        "repositoryURL": "https://github.com/antranapp/TweakPane",
+        "state": {
+          "branch": "master",
+          "revision": "69a0341cf66e229d6f07a2ad8d94489e7e20c43c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
