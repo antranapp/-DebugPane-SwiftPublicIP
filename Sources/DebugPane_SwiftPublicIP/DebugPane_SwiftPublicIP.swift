@@ -8,7 +8,7 @@ import SwiftUI
 import TweakPane
 
 public struct SwiftPublicIPBlade: Blade {
-    public var name: String = "Public IP"
+    public var name: String? = "Public IP"
     
     public init() {}
     

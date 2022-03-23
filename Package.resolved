@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/antranapp/DebugPane",
         "state": {
           "branch": "master",
-          "revision": "6fb746b07c0af46f2b693a582e0425682ea88cfb",
+          "revision": "48fa8ba139c115d9bc812e3f845f86797c60af93",
           "version": null
         }
       },
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/antranapp/TweakPane",
         "state": {
           "branch": "master",
-          "revision": "69a0341cf66e229d6f07a2ad8d94489e7e20c43c",
+          "revision": "d9627f8b172d4ae10213c2d8718b128bd67ea322",
           "version": null
         }
       }
