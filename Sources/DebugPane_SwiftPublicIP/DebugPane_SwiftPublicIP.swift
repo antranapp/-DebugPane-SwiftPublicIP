@@ -39,9 +39,13 @@ extension ContentView {
         func fetchIP() {
             SwiftPublicIP.getPublicIP(url: PublicIPAPIURLs.IPv4.icanhazip.rawValue) { [weak self] string, error in
                 if let error = error {
-                    self?.ip = error.localizedDescription
+                    DispatchQueue.main.async {
+                        self?.ip = error.localizedDescription
+                    }
                 } else if let string = string {
+                    DispatchQueue.main.async {
                     self?.ip = string
+                    }
                 }
             }
         }
