@@ -18,8 +18,6 @@ public struct SwiftPublicIPBlade: Blade {
 }
 
 private struct ContentView: View {
-    private let info = Bundle.main.infoDictionary
-
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
