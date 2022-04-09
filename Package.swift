@@ -14,13 +14,17 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/antranapp/DebugPane", .branch("master")),
-        .package(url: "https://github.com/HackingGate/Swift-Public-IP", .branch("master")),
+        .package(
+            name: "SwiftPublicIP",
+            url: "https://github.com/HackingGate/Swift-Public-IP",
+            .branch("master")
+        ),
     ],
     targets: [
         .target(
             name: "DebugPane_SwiftPublicIP",
             dependencies: [
-                .product(name: "SwiftPublicIP", package: "Swift-Public-IP"),
+                "SwiftPublicIP",
                 "DebugPane",
             ]
         ),
